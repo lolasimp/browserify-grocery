@@ -18,9 +18,9 @@ const depoString = (departments) => {
   return depoString;
 };
 
-const printToDom = (departments) => {
+const printDepartmentToDom = (departments) => {
   departmentOutputDiv.innerHTML = depoString(departments);
   events.addDepartmentEvents();
 };
 
-module.exports = printToDom;
+module.exports = printDepartmentToDom;
