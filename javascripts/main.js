@@ -1,4 +1,4 @@
-const data = require('./data');
+const dataGatekeeper = require('./dataGatekeeper');
 
-data.initializer();
+dataGatekeeper.initializer();
 // what the object will bring back

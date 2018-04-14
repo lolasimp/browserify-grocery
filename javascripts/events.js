@@ -19,6 +19,8 @@ const hideDepartmentName = (e) => {
 const showItems = (e) => {
   const departmentId = e.target.parentNode.children[0].dataset.departmentId;
   console.log('event', departmentId);
+
+  // TODO: filter items by departmentId
 };
 
 const addDepartmentEvents = () => {

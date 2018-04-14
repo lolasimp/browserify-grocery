@@ -1,19 +1,14 @@
-const loadFunction = require('./departments');
-const dom = require('./dom');
+let departments = [];
 
-const onloadFunction = function () {
-  const data = JSON.parse(this.responseText).departments;
-  dom(data);
+const getDepartments = () => {
+  return departments;
 };
 
-const failToLoad = function () {
-  console.error('This is wrong!!!');
-};
-
-const initializer = () => {
-  loadFunction(onloadFunction, failToLoad);
+const setDepartments = (departmentsArray) => {
+  departments = departmentsArray;
 };
 
 module.exports = {
-  initializer,
+  getDepartments,
+  setDepartments,
 };
