@@ -1,9 +1,9 @@
 const loadFunction = require('./departments');
-const printToDom = require('./dom');
+const dom = require('./dom');
 
 const onloadFunction = function () {
   const data = JSON.parse(this.responseText).departments;
-  printToDom(data);
+  dom(data);
 };
 
 const failToLoad = function () {
