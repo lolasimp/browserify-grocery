@@ -11,7 +11,8 @@ const onloadFunction = function () {
 
 const whenItemsLoad = function () {
   const itemsData = JSON.parse(this.responseText).items;
-  console.log('itemsData', itemsData);
+  // console.log('itemsData', itemsData);
+  data.setIems(itemsData);
 };
 
 const failToLoad = function () {
