@@ -1,3 +1,4 @@
+const itemEvents = require('./itemEvents');
 const itemsOutputDiv = document.getElementById('items');
 
 const itemsDomString = (items) => {
@@ -42,6 +43,7 @@ const itemsDomString = (items) => {
 
 const printToDom = (items) => {
   itemsOutputDiv.innerHTML = itemsDomString(items);
+  itemEvents();
 };
 
 module.exports = printToDom;
