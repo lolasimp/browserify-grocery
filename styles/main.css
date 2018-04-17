@@ -3,7 +3,6 @@ body {
 }
 .department {
  margin: 20px 0;
- border: 2px solid black;
 }
 
 .department-image {
@@ -21,4 +20,14 @@ body {
     top: 200px;
     font-size:  50px;
     left: 40px;
+}
+/*ITEMS */
+
+.item-image {
+  height: 100px;
+  width: 100px;
+}
+
+.item {
+  height: 200px;
 }
